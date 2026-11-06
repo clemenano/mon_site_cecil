@@ -1,0 +1,180 @@
+// ==========================================
+// PORTFOLIO PERSONNEL - DESIGN PERSONNALISÉ
+// Couleurs : Bleu nuit et or
+// ==========================================
+
+$gap: 1rem;
+$bleu-nuit: #172b4d;
+$bleu-secondaire: #243f68;
+$or: #c9a653;
+$fond: #f5f7fa;
+$texte: #263238;
+
+// Couleurs générales
+:root {
+  --pico-primary: #{$bleu-nuit};
+  --pico-primary-hover: #{$bleu-secondaire};
+  --pico-primary-focus: rgba(201, 166, 83, 0.25);
+  --pico-primary-inverse: #ffffff;
+  --pico-muted-color: #687789;
+  --pico-background-color: #{$fond};
+  --pico-color: #{$texte};
+}
+
+// Corps de la page
+body {
+  background-color: $fond;
+  color: $texte;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+// En-tête et navigation
+header {
+  background-color: $bleu-nuit;
+  color: white;
+  border-bottom: 4px solid $or;
+  padding: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $or;
+    }
+  }
+}
+
+// Titres
+h1, h2, h3 {
+  color: $bleu-nuit;
+  font-weight: 700;
+}
+
+h1 {
+  border-bottom: 3px solid $or;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+// Liens
+a {
+  color: $bleu-secondaire;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($or, 10%);
+    text-decoration: underline;
+  }
+}
+
+// Contenu principal
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  min-height: 65vh;
+}
+
+// Paragraphes et listes
+p {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+// Sections et articles
+article {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid $or;
+  box-shadow: 0 3px 12px rgba(23, 43, 77, 0.07);
+
+  time {
+    display: block;
+    margin-bottom: $gap;
+    color: var(--pico-muted-color);
+  }
+}
+
+// Boutons
+button,
+[role="button"] {
+  background-color: $bleu-nuit;
+  border-color: $bleu-nuit;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $bleu-secondaire;
+    border-color: $or;
+  }
+}
+
+// Table des matières
+.toc {
+  margin-bottom: $gap * 2;
+
+  summary {
+    font-weight: bold;
+    color: $bleu-nuit;
+  }
+}
+
+// Liens du pied de page
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+// Pied de page
+footer {
+  background-color: $bleu-nuit;
+  color: white;
+  padding: 2rem 1rem;
+  border-top: 4px solid $or;
+  text-align: center;
+
+  a {
+    color: $or;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+// Adaptation aux petits écrans
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}

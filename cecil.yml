@@ -1,0 +1,39 @@
+# Site configuration: https://cecil.app/documentation/configuration/
+title: 'Mon Portfolio Personnel'
+baseline: 'Bienvenu sur mon portfolio personnel:découvrez mon parcours, mes compétences et mes projets informatiques.'
+baseurl: /
+description: "Ce portfolio présente mon parcours académique,mes compétences en informatique,mes connaissances en programmation web et en réseaux informatiques,ainsi que les différents projets que j'ai réalisé."
+language: fr
+languages:
+  - code: fr
+    name: fr
+    locale: fr
+author:
+  name: 'ANOALITE Clémentine'
+image: icon.png # default image of social networks cards, stored in `assets/`
+taxonomies:
+  tags: tag
+menus:
+  main:
+    -    - id: projets
+      name: Mes projets
+      url: /projets/
+      weight: 4
+    - id: apropos
+      name: À propos
+      url: /about/
+      weight: 2
+    - id: competences
+      name: Mes compétences
+      url: /competence/
+      weight: 3
+## Number of pages per page of a paginated list
+#pages:
+#  pagination:
+#    max: 5
+## Dates format
+#date:
+#  format: 'F j, Y'
+## Default robots directive
+#metatags:
+#  robots: index,follow
