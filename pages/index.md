@@ -51,7 +51,7 @@ Solution informatique destinée à faciliter le suivi du matériel, des catégor
 
 Projet de conception d'un annuaire pour organiser les informations relatives aux provinces, aux communautés et aux personnes.
 
-[Découvrir mes projets](/projets/)
+[Découvrir mes projets](/mon_site_cecil/projets/)
 
 ---
 
