@@ -4,9 +4,7 @@ title: "Mes compétences"
 description: "Découvrez mes compétences en développement web, programmation, bases de données et réseaux informatiques."
 date: 2026-11-05
 published: true
-menu:
-  main:
-    weight: 3
+
 ---
 
 # Mes compétences informatiques
